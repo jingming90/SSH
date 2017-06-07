@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="category" extends="struts-default" namespace="/category">
+		<action name="categoryAction" class="categoryAction" method="categoryLogin">
+			<result name="success">/category.jsp</result>
+		</action>
+
+		<action name="categoryDelete" class="categoryAction" method="deleteCategory">
+			<result name="success">/category.jsp</result>
+		</action>
+
+		<action name="categoryUpdate" class="categoryAction" method="updateCategroy">
+			<result name="success">/category.jsp</result>
+			<result name="failure">/update.jsp</result>
+		</action>
+
+		<action name="categoryAdd" class="categoryAction" method="addCategory">
+			<result name="success">/category.jsp</result>
+		</action>
+	</package>
+</struts>    
